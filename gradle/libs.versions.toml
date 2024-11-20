@@ -1,0 +1,23 @@
+[versions]
+kotlin = "2.0.20"
+kapt = "2.0.20"
+kotlinx-coroutines = "1.9.0"
+
+velocity = "3.4.0-SNAPSHOT"
+sayanvanish = "1.5.4"
+
+protobuf = "4.27.2"
+protobufplugin = "0.9.4"
+
+[libraries]
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-jdk8 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8", version.ref = "kotlinx-coroutines" }
+
+velocity = { module = "com.velocitypowered:velocity-api", version.ref = "velocity" }
+sayanvanish-api = { module = "org.sayandev:sayanvanish-api", version.ref = "sayanvanish" }
+
+protobuf-kotlin = { module = "com.google.protobuf:protobuf-kotlin", version.ref = "protobuf" }
+
+[plugins]
+protobuf = { id = "com.google.protobuf", version.ref = "protobufplugin" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt" }

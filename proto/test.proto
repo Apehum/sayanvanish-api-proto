@@ -1,0 +1,6 @@
+syntax = "proto3";
+package com.github.apehum.testproto.proto;
+
+message TestMessage {
+  string test = 1;
+}
